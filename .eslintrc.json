@@ -9,7 +9,7 @@
       "prettier",
       "import",
       "react-hooks",
-      "jest-dom",
+      "jest-dom"
     ],
     "extends": [
       "airbnb",
