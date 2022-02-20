@@ -8,16 +8,14 @@
       "@typescript-eslint",
       "prettier",
       "import",
-      "react-hooks",
-      "jest-dom"
+      "react-hooks"
     ],
     "extends": [
       "airbnb",
       "prettier",
       "plugin:import/errors",
       "plugin:import/warnings",
-      "plugin:import/typescript",
-      "plugin:jest-dom/recommended"
+      "plugin:import/typescript"
     ],
     "settings": {
       "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
@@ -46,12 +44,7 @@
       "react-hooks/exhaustive-deps": 1,
       "no-use-before-define": "off",
       "@typescript-eslint/no-use-before-define": ["error"],
-      "no-console": [
-        "error",
-        {
-          "allow": ["warn", "error"]
-        }
-      ],
+      "no-console": "off",
       "no-confusing-arrow": 0,
       "no-shadow": 0,
       "@typescript-eslint/no-shadow": 2,

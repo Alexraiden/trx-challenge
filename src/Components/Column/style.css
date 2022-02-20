@@ -1,0 +1,9 @@
+.column {
+  background-color: white;
+  border-radius: 3px;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  overflow-y: scroll;
+  max-height: 85vh;
+}
