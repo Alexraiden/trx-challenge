@@ -12,6 +12,3 @@ It remains to be done :
 - possibility to add and customize the body of the cards
 - Persistence
 - DragNDrop for columns
-
-Translated with www.DeepL.com/Translator (free version)
-
