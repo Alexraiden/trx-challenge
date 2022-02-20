@@ -1,0 +1,8 @@
+.addButton {
+  display: flex;
+  width: fit-content;
+}
+
+.textfield{
+  width: 130px;
+}

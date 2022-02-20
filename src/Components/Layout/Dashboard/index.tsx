@@ -7,6 +7,19 @@ import { columnsMock } from 'Mocks'
 export const Dashboard = () => {
   const [columns, setColumns] = useState(() => columnsMock)
 
+  const addCard = (columnId, title) => {
+    const columnTasks = columns[columnId].cardList
+    const newTaskList = [
+      ...columnTasks,
+      { id: Math.floor(Math.random() * 100), title, body: 'body' },
+    ]
+
+    setColumns({
+      ...columns,
+      [columnId]: { ...columns[columnId], cardList: newTaskList },
+    })
+  }
+
   const onDragEnd = ({ source, destination }: DropResult) => {
     // Cases no need to update columns
     if (destination === undefined || destination === null) return null
@@ -72,7 +85,7 @@ export const Dashboard = () => {
           {Object.values(columns).map(col => {
             const { id, title, cardList } = col
 
-            return <Column {...{ id, title, cardList }} key={col.id} />
+            return <Column {...{ id, title, cardList, addCard }} key={col.id} />
           })}
         </div>
       </div>

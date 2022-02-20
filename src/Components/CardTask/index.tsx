@@ -12,7 +12,6 @@ export type CardTaskType = {
 }
 
 export const CardTask = (props: CardTaskType) => {
-  console.log('props= ', props)
   const { title, body, index, id } = props
 
   return (
